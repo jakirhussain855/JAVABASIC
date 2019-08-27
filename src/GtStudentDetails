@@ -1,0 +1,37 @@
+package quiz;
+//program to get student details
+import java.util.Scanner;
+
+public class GetStudentDetails {
+    public static void main(String args[])
+ {
+        String name;
+        int roll,
+
+        int math, int phy, int CS,int eng;
+
+
+        Scanner SC=new Scanner(System.in);
+
+        System.out.print("Enter Name: ");
+        name=SC.nextLine();
+
+        System.out.print("Enter Roll Number: ");
+        roll=SC.nextInt();
+        System.out.print("Enter marks in Maths, Physics,CS and English: ");
+        math=SC.nextInt();
+        phy=SC.nextInt();
+        cs=SC.nextInt();
+        eng=SC.nextInt();
+
+        int total=math+eng+phy+CS;
+        float perc=(float)total/400*100;
+
+        System.out.println("Roll Number:" + roll +"\tName: "+name);
+        System.out.println("Marks (Maths, Physics,cs, English): " +math+","+phy+","+cs+"+eng);
+        System.out.println("Total: "+total +"\tPercentage: "+perc);
+
+    }
+
+}
+
